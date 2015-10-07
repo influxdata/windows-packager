@@ -19,3 +19,17 @@ go get -u -f -d ./...
 GOOS=windows GOARCH=amd64 go build ./cmd/influxd
 GOOS=windows GOARCH=amd64 go build ./cmd/influx
 ```
+
+## Generating the MSI
+
+First, we need to use candle to create our intermmediate object that will turn into an msi file.
+
+```
+candle.exe -nologo influxdb.wxs -out influxdb.wixobj  -ext WixUtilExtension  -ext WixUIExtension
+```
+
+Now we can generate the msi file with this command:
+
+```
+light.exe -nologo influxdb.wixobj -out influxdb.msi  -ext WixUtilExtension  -ext WixUIExtension
+```
