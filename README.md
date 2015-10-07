@@ -12,12 +12,10 @@ NOTE: You have to uppercase the GUID's that this site generates to be fully comp
 ## Generating InfluxDB Binaries
 
 To generate the necessary InfluxDB binaries, pull down the [project](http://github.com/influxdb/influxdb).  Then with a valid [go](http://golang.org) 
-environment set up, run the following commands:
+environment set up, run the following script:
 
 ```sh
-go get -u -f -d ./...
-GOOS=windows GOARCH=amd64 go build ./cmd/influxd
-GOOS=windows GOARCH=amd64 go build ./cmd/influx
+./build.sh
 ```
 
 ## Generating the MSI
