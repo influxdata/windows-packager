@@ -1,1 +1,4 @@
 bin/
+influxdb.msi
+influxdb.wixobj
+influxdb.wixpdb
