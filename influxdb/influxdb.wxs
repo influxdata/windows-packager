@@ -15,10 +15,10 @@
 
         <DirectoryRef Id="APPLICATIONROOTDIRECTORY">
 		<Component Id="influx.exe" DiskId="1" Guid="6E849F53-7C1E-4AD3-BFBA-67F1442F1738">
-		    <File Id="influx.exe" Name="influx.exe" Source=".\bin\influx.exe" Checksum="yes" />
+		    <File Id="influx.exe" Name="influx.exe" Source="..\bin\influx.exe" Checksum="yes" />
 		</Component>
                 <Component Id="influxd.exe" DiskId="1" Guid="10117727-FFB8-4590-BEC5-F4249083FE8A">
-                    <File Id="influxd.exe" Name="influxd.exe" Source=".\bin\influxd.exe" />
+                    <File Id="influxd.exe" Name="influxd.exe" Source="..\bin\influxd.exe" />
                 </Component>
         </DirectoryRef>
 
@@ -50,7 +50,7 @@
         </Feature>
         <UI />
         <UIRef Id="WixUI_Minimal" />
-        <Icon Id="StartMenuIcon.exe" SourceFile=".\bin\influx.exe" />
+        <Icon Id="StartMenuIcon.exe" SourceFile="..\bin\influx.exe" />
 	<WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
     </Product>
 </Wix>
