@@ -1,4 +1,9 @@
+*.swp
 bin/
 influxdb.msi
 influxdb.wixobj
 influxdb.wixpdb
+chronograf.msi
+chronograf.wixobj
+chronograf.wixpdb
+
