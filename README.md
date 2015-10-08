@@ -2,6 +2,12 @@
 
 This project houses the windows install packages for [InfulxDB](https://github.com/influxdb/influxdb), [Chronograf](https://influxdb.com/chronograf/index.html), and [Telegraf](https://github.com/influxdb/telegraf)](https://github.com/influxdb/telegraf).
 
+## Future Features
+
+- [ ] Install executables as services
+- [ ] Log events to event log
+- [ ] Allow configuration of services via install
+
 ## InfluxDB Windows Packager
 
 This project uses the [Wix Toolset](http://wixtoolset.org/) to generate a windows msi installer. All of the scripts to build
