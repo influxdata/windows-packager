@@ -1,0 +1,16 @@
+# Chronograf configuration
+
+# TCP address that Chronograf should bind to.
+# Bind to localhost by default, so that Chronograf should be inaccessible from the public internet.
+# Can be overridden with environment variable CHRONOGRAF_BIND.
+Bind = "127.0.0.1:9090"
+
+# Path to local database file to use or create for storing Chronograf application data.
+# Can be overridden with environment variable CHRONOGRAF_LOCAL_DATABASE.
+LocalDatabase = "chronograf.db"
+
+# DSN to connect to MySQL for storing Chronograf application data.
+# If set, takes precedence over LocalDatabase setting.
+# Can be overridden with environment variable CHRONOGRAF_MYSQL_DSN.
+# Uncomment and update if you want to use MySQL.
+# MySQLDSN = "user:password@tcp(192.0.2.1:3306)/some_database"
