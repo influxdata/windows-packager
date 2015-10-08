@@ -6,4 +6,7 @@ influxdb.wixpdb
 chronograf.msi
 chronograf.wixobj
 chronograf.wixpdb
+telegraf.msi
+telegraf.wixobj
+telegraf.wixpdb
 
